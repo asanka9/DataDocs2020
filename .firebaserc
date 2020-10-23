@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "data--science-web": {
+      "hosting": {
+        "web": [
+          "data--science-web"
+        ]
+      }
+    }
+  }
+}
