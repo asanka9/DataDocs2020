@@ -1,2 +1,193 @@
-<p>home works!</p>
+<div class="container">
+  <!--Introduction to deep learning-->
+  <div>
+    <h5>Introduction to deep learning</h5>
+    <p>Deep learning is a techniques mimic the human brain</p>
+    <p>Different type of neural network models</p>
+    <ul>
+      <li>
+        ANN (Artificial neural network)
+      </li>
+      <li>
+        CNN (Convolutional neural network)
+      </li>
+      <li>
+        RNN (Recurrent neural network)
+      </li>
+    </ul>
+    <p>Lets 1st see the architecture of basic neural networks
+      A neural network contains Input layer hidden layer and output layer
+      We can also use many numbers of hidden layers
+      </p>
+    <img src="https://miro.medium.com/max/1063/0*u-AnjlGU9IxM5_Ju.png" class="img-fluid"  width="500px" height="300px">
+  </div>
+
+  <!--How Neuron Works-->
+  <div>
+    <h5>How Neuron Works</h5>
+    <p>
+      Now we see how a neuron works and how neural networks works
+      Each neuron combined each other with lines, these lines use for weight initializer purpose, each neuron do two task
+    </p>
+    <ul>
+      <li>Calculating sum of weights</li>
+      <li>Applying activation functions</li>
+    </ul>
+    <img src="https://miro.medium.com/max/3000/1*T4ARzySpEQvEnr_9pc78pg.jpeg" class="img-fluid" width="500px" height="300px">
+    <img src="https://qph.fs.quoracdn.net/main-qimg-b019133b165292e51bcbac7b26f0ad61"class="img-fluid" width="500px" height="300px">
+    <p>
+      In deep learning, we use a different type of Activation functions and various type of weight initializer techniques for getting better prediction, this is forward propagation.in backward
+      propagation assign new weights
+    </p>
+  </div>
+
+  <!--Different type of activation functions:-->
+  <div>
+    <h5>Different type of activation functions:</h5>
+    <ul>
+      <li>
+        <b>Sigmoid Activation Function</b>
+        <p>
+          (from this activation function convert summation of weights to 0 -1
+          We can use this activation function for binary classification, this activation
+          function used for logistic regression also, here 0.5 is the threshold value if the value
+          is greater than 0.5 it is activated and if a value is less than 0.5 it is deactivated )
+        </p>
+        <img src="https://dvqlxo2m2q99q.cloudfront.net/000_clients/981864/file/9818648EisiqmG.png" class="img-fluid" width="500px" height="300px">
+      </li>
+      <li>
+        <b>Relu Activation Functions</b>
+        <p>
+          (In Most of the use cases using relu activation function,
+          in relu activation function all negative values converted to 0, in
+          regression problem statement we can use relu activation function, in
+          classification problem we can also use relu activation function for hidden layers,
+          for positive numbers this activation represent y=mx equation)
+        </p>
+        <img src="https://miro.medium.com/max/2052/1*DfMRHwxY1gyyDmrIAd-gjQ.png" class="img-fluid" width="500px" height="300px">
+
+      </li>
+      <li>
+        <b>Threshold Activation Function</b><br>
+        <img src="https://www.researchgate.net/profile/Lambert_Spaanenburg/publication/2901513/figure/fig1/AS:339774410903552@1458019940551/A-THRESHOLD-ACTIVATION-FUNCTION.png" class="img-fluid" width="500px" height="300px">
+      </li>
+    </ul>
+  </div>
+
+  <!--How Backward Propagation Works :-->
+  <div>
+    <h5>How Backward Propagation Works :</h5>
+    <p>
+      Considering backward propagation in  neural network Loss function is very important,<br>
+      Loss = ( actual value – predicted value )<br>
+      This is a simple idea for the loss function, but here loss value will be a negative value, for avoiding this<br>
+      Loss = ( actual value – predicted value )<sup>2</sup><br>
+      Sigma(I to n) ( actual value – predicted value )<sup>2</sup><br>
+      In backward propagation neural network try to reduce loss function, for that neural network do weight updating<br>
+      Wnew = wold– (learning rate)dl/dwold // addd iamage
+      dl/dwold calculate with optimizer, different type of optimizers use in nueral networks
+    </p>
+  </div>
+
+  <!--How Optimizer works and how learning rate works :-->
+  <div>
+    <h5>How Optimizer works and how learning rate works :</h5>
+    <p>There have a different type of optimizers</p>
+    <ul>
+      <li>
+        Gradient descent
+      </li>
+      <li>
+        Stochastic Gradient descent
+      </li>
+      <li>
+        Mini Batch Stochastic Gradient descent
+      </li>
+    </ul>
+    <b>How optimizer works :</b><br>
+    <img src="https://miro.medium.com/max/1000/0*ZppAJQdr9FnrnrGG.jpg"  class="img-fluid" width="500px" height="300px">
+    <p>
+      If the learning rate value is very very high it
+      takes more time to take the minimum point,if the learning rate is high weight go here and there
+    </p>
+    <img src="https://miro.medium.com/max/1400/1*GTRi-Y2doXbbrc4lGJYH-w.png"  class="img-fluid" width="500px" height="300px">
+    <ul>
+      <li>
+        <b>Gradient descent</b><br>
+        <p>If we have n number of data points, here consider all n data points at a time</p>
+      </li>
+      <li>
+        <b>Stochastic gradient descent</b><br>
+        <p>  Here Consider one data point at a time, in Linear Regression problem statement use this technique </p>
+      </li>
+      <li>
+        <b>Mini batch SGD</b><br>
+        <p>  Many neural networks use this optimizer
+          If we have n number of data points here we consider k number of data points ( i.e. k<n )</p>
+      </li>
+    </ul>
+
+      <i>Why most of the use cases we can not use Gradient Descent for Neural Networks ?</i><br>
+      <ul>
+        Because it takes more computation power for load therefore we use Mini
+        Batch SGD for most of the Neural Networks
+
+      </ul>
+      <p>
+        Gradient Descent like population and Mini Batch SGD like a sample,
+        but Gradient descent result and Mini batch SGD results are not exactly same they are approximately same,
+        Gradient descent  move directly to the minimum point but Mini Batch SGD does not move directly
+        to a minimum point
+      </p>
+      <img src="https://miro.medium.com/max/1816/1*PV-fcUsNlD9EgTIc61h-Ig.png" class="img-fluid" width="500px" height="300px"><br>
+      <p>local maxima points, local minima points, and global minima & maxima point generate with mini-batch SGD<br>
+        getting the global minimum point among local minima we use the convex function
+      </p>
+      <img src="https://www.researchgate.net/profile/Mohamed_Ahmed360/publication/341902041/figure/fig2/AS:898633943752704@1591262436077/local-minima-vs-global-minimum.ppm" class="img-fluid" width="500px" height="300px">
+      <img src="https://wngaw.github.io/images/local_vs_global_minima.png" class="img-fluid" width="500px" height="300px">
+  </div>
+
+  <!--Chain Rule in Backward Propergation-->
+  <div>
+    <h5>Chain rule in back-propergation</h5>
+    <p>
+      Chain rule indicates that how weight update is impacting with previous weights
+      Consider below one,
+    </p>
+    <img src="https://cdn-media-1.freecodecamp.org/images/1*_KMMFvRP5X9kC59brI0ykw.png" class="img-fluid" width="500px" height="300px">
+  </div>
+
+  <!--vanishing gradient Problem-->
+  <div>
+    <h5>Vanishing gradient problem </h5>
+    <p>
+      Vanishing gradient problem mostly happen with applying sigmoid activation function,
+      also when we Appling Threshold activation function this problem will be happen
+    </p>
+    <img src="https://miro.medium.com/max/1200/1*0yhJ7DbhOX-tRUseljjYoA.png" class="img-fluid" width="500px" height="300px">
+    <p>Vanishing gradient problem with sigmoid</p><br>
+    <p>The derivative of sigmoid value will between 0 – 0.25 when
+      the number of layers increasing the value of derivative will decreasing
+      therefore w-old and w-new is approximately the same this is vanishing gradient problem,
+      for avoiding this we can use another activation function for our hidden layers. Sigmoid
+      activation function most preferred for output layers,
+      From the vanishing gradient problem, there will take more time to
+      From using the chain rule we can explain this</p>
+      <h6>Solving vanishing gradient problem with relu:</h6>
+      <img src="https://www.researchgate.net/profile/Jesper_Dramsch/publication/342435907/figure/fig3/AS:906156654469121@1593055990865/ReLU-activation-red-and-derivative-blue-for-efficient-gradient-computation.ppm" class="img-fluid" width="500px" height="300px">
+      <p>When applying relu activation function some times w-old and w-new value will same,
+        at this time dead neurons will occur,for avoiding this we have activation function leaky relu </p>
+      <img src="https://miro.medium.com/max/1200/1*gDIUV3yonKbIWh_9Kl4ShQ.png" class="img-fluid" width="500px" height="300px">
+  </div>
+
+  <!--Adagrad Optimizer-->
+  <div>
+    <h5>Adagrad optimizer</h5>
+    <p>Learning rate change according to time</p>
+    <img src="https://miro.medium.com/max/1460/1*SqryO8o7BP0f-LeU_5C8zw.png">
+  </div>
+
+</div>
+
+
 

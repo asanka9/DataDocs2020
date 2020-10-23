@@ -4,11 +4,17 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { DeepLearningComponent } from './deep-learning/deep-learning.component';
+import { ToolsComponent } from './tools/tools.component';
+import { CnnComponent } from './deep-learning/cnn/cnn.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    DeepLearningComponent,
+    ToolsComponent,
+    CnnComponent
   ],
   imports: [
     BrowserModule,
