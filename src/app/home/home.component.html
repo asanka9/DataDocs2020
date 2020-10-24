@@ -184,7 +184,75 @@
   <div>
     <h5>Adagrad optimizer</h5>
     <p>Learning rate change according to time</p>
-    <img src="https://miro.medium.com/max/1460/1*SqryO8o7BP0f-LeU_5C8zw.png">
+    <img src="https://miro.medium.com/max/1460/1*SqryO8o7BP0f-LeU_5C8zw.png" class="img-fluid" width="500px" height="300px">
+    <p>According to time alpha t is increasing learning rate will
+      decreasing, here we use small positive value because sometimes this small value be 0 	</p>
+    <img src="https://miro.medium.com/max/5344/1*WKHP9vVjSrwyl6t1unvZ-A.jpeg" class="img-fluid" width="500px" height="300px">
+  </div>
+
+  <!--Exploding gradient Ppoblem-->
+  <div>
+    <h5>Exploding gradient Problem</h5>
+    <p>
+      Exploding gradient problem will happen when weight initializer is not happening correctly
+      For avoiding this problem we can use proper weight initializer techniques
+    </p>
+  </div>
+
+  <!--Avoiding Overfitting Problem: -->
+  <div>
+    <h5>Avoiding Overfitting Problem</h5>
+    <p>
+      In neural networks when we applying multi-layers therefore underfitting will never happen, underfitting will happen when we do not use multilayers for the neural network under fitting will happen
+      When our data set to get good accuracy in our training data but if our neural network does not get good accuracy for our testing data this is an overfitting problem. For avoiding this result we can use Drop Out and Regularization
+      In Random forest for avoiding overfitting problem, we make multiple decision trees, here we take a subset of features, similarly   in
+      the neural network we select drop out ratio,
+    </p>
+    <i>0 <= Drop Out Ration <= 1</i>
+    <p>In the random forest we choose a subset of features similarly
+      neural network we select a subset of neurons in input layers and a subset of neurons in hidden layers </p>
+    <img src="https://pythonmachinelearning.pro/wp-content/uploads/2017/09/Dropout.png.webp" class="img-fluid" width="500px" height="300px">
+    <p>
+      If our dropout ratio value is 0.5 it is randomly select 50% of neurons for
+      activating other ones are deactivated, in backward propagation weight updating will happen
+      for only activating neurons. This is for training data set for tasting data set all neurons will
+      activating  but for testing data or predicting output all weights are updated with multiplication with drop out ratio
+    </p>
+  </div>
+
+  <!--Weight Initialization Techniques in Neural Network-->
+  <div>
+    <h5>Weight initialization techniques in neural network</h5>
+    <p>
+      When applying weight initializer for neurons,
+      weights should not be the same and they need good variance also weights
+      should not be very small, if weights have the same weights and they do not have a good variance for neurons,
+      neurons will teach all feature in the same way. <br>
+      Different Weight initializer techniques:
+    </p>
+    <img src="https://miro.medium.com/max/2560/1*Q5LhpXUc5Ms1iVoM7UNqSw.jpeg" class="img-fluid" width="500px" height="300px"><br>
+    <i>fan-in and fan-out in nueral network</i>
+    <ul>
+      <li>
+        <b>Uniform Distribution</b>
+
+      </li>
+      <li>
+        <b>Xavior/Gorat distribution</b><br>
+        <img src="https://miro.medium.com/max/1338/1*8gmSlsG4TdTHlnEsCSVlZw.png" class="img-fluid" width="500px" height="300px"><br>
+        <p>Here consider fan_in and fan_out values, this is works well for sigmoid activation function</p>
+      </li>
+      <li>
+        <b>He init </b>
+        <p>
+          Normally He Uniform and He Normal activation function work
+          very well with Relu and leaky Relu Activation Functions, Xavier and Uniform
+           distribution works with Sigmoid Activation function
+        </p>
+      </li>
+    </ul>
+    <i>Summary</i><br>
+    <img src="https://img-blog.csdnimg.cn/20200624082145939.png" class="img-fluid" width="500px" height="300px">
   </div>
 
 </div>
