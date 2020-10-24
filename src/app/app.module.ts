@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { DeepLearningComponent } from './deep-learning/deep-learning.component';
 import { ToolsComponent } from './tools/tools.component';
 import { CnnComponent } from './deep-learning/cnn/cnn.component';
+import { EnsembleComponent } from './ensemble/ensemble.component';
+import { RandomForestComponent } from './ensemble/random-forest/random-forest.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { CnnComponent } from './deep-learning/cnn/cnn.component';
     HomeComponent,
     DeepLearningComponent,
     ToolsComponent,
-    CnnComponent
+    CnnComponent,
+    EnsembleComponent,
+    RandomForestComponent
   ],
   imports: [
     BrowserModule,
