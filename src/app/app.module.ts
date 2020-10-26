@@ -9,6 +9,9 @@ import { ToolsComponent } from './tools/tools.component';
 import { CnnComponent } from './deep-learning/cnn/cnn.component';
 import { EnsembleComponent } from './ensemble/ensemble.component';
 import { RandomForestComponent } from './ensemble/random-forest/random-forest.component';
+import { DecisiontreeComponent } from './decisiontree/decisiontree.component';
+import { RegressionComponent } from './regression/regression.component';
+import { KnnComponent } from './knn/knn.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { RandomForestComponent } from './ensemble/random-forest/random-forest.co
     ToolsComponent,
     CnnComponent,
     EnsembleComponent,
-    RandomForestComponent
+    RandomForestComponent,
+    DecisiontreeComponent,
+    RegressionComponent,
+    KnnComponent
   ],
   imports: [
     BrowserModule,

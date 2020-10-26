@@ -1,0 +1,171 @@
+<div class="container">
+
+  <!--Decision trre algorithom Assumption-->
+  <div>
+    <h5>Assumption of Linear Regression</h5>
+    <ul>
+      <li><b>The relationship between x and the mean y is linear,</b><br>
+        <img src="https://www.researchgate.net/profile/Johannes_Beller/publication/260509088/figure/fig1/AS:297035187146756@1447830115731/The-linearity-and-effect-homogeneity-assumption-and-possible-violations-of-these.png"  class="img-fluid" width="500px" height="300px">
+        <p>This is checked to form a scatter plot of data.
+          Check to see the what type of correlation the scatter plot
+          appear to show, Positive Negative or None if Positive or negative
+          we can use this data for linear regression</p>
+      </li>
+
+      <li><b>The variance of residual is the same as any value of x,</b><br>
+        <img src="https://d2mvzyuse3lwjc.cloudfront.net/doc/en/UserGuide/images/Graphic_Residual_Analysis/Graphic_Residual_Analysis-1.png?v=10726"  class="img-fluid" width="500px" height="300px">
+        <img src="https://i.stack.imgur.com/rtn7e.png"   class="img-fluid" width="500px" height="300px">
+        <p>This is checked from a residual plot, check to see if the
+          residual form a pattern, if there is no pattern then you are
+          good to use this data for linear regression </p>
+      </li>
+
+      <li><b>Observations are independent of each other,</b><br>
+        <img src="https://media.cheggcdn.com/media/8d9/8d93a52e-154d-482d-b041-5f8c9499d22a/phpfLQGSz.png"  class="img-fluid" width="500px" height="300px">
+        <p>We can check this one also residual plot, check see what is
+          correlation- Positive Negative Or None ,if it is None it is good
+          to use for linear regression  </p>
+      </li>
+
+      <li><b>Normality Of Errors</b><br>
+        <img src="https://i.ytimg.com/vi/-KXy4i8awOg/maxresdefault.jpg"  class="img-fluid" width="500px" height="300px">
+        <p>This is checked from a “Normal Probability” plot.
+          We can check this one using QQ Plot, If our data not normal distributed,
+           we want to transform these to the normal distribution<br>How can we transform variable
+           so that they follow the normal distribution</p>
+          <ul>
+            <li>Logarithmic Transformation  </li>
+            <li>Reciprocal Transformation  </li>
+            <li>Square root Transformation  </li>
+            <li>Exponential Transformation  </li>
+            <li>Boxcox Transformation  </li>
+          </ul>
+      </li>
+
+    </ul>
+  </div>
+
+  <!--How Linear Regression Works-->
+  <div>
+    <h5>How Linear Regression Works</h5>
+    <p>Linear regression algorithm tries to make the best fit line with variables, this also calculate the loss function </p>
+    <img src="https://miro.medium.com/max/1108/1*RWG57epDNVQ_JQAwE7-ubw.png"  class="img-fluid" width="500px" height="300px">
+    <p>Here we use only squared value not using the power of 3,4,6 etc..
+      because here, we need to find a global minimum point. if we use different
+      powers we get local minimums in gradient descent</p>
+    <img src="https://www.researchgate.net/profile/Rafael_Lopez22/publication/278665911/figure/fig7/AS:667108413304832@1536062448021/Local-and-Global-minima.ppm"  class="img-fluid" width="500px" height="300px">
+    <i>When using different powers</i><br>
+    <b>Linear Regression with Gradient Descent</b><br>
+    <img src="https://miro.medium.com/max/2130/1*CSocAhQwk1xuncdV7aRdmA.png"  class="img-fluid" width="500px" height="300px">
+    <img src="https://miro.medium.com/max/875/1*jNyE54fTVOH1203IwYeNEg.png"  class="img-fluid" width="500px" height="300px">
+    <p>//Need more expain</p>
+  </div>
+  <!--Advantages-->
+  <div>
+    <h5>Advantages</h5>
+    <p>Linear regression perform exceptionally well for linearly separable data
+      Easy to implement and train the model
+      It can be handle overfitting using dimensionally reduction techniques and
+      cross-validation and applying ridge and lasso regression </p>
+  </div>
+
+  <!--Disadvantages-->
+  <div>
+    <h5>Disadvatages</h5>
+    <p>
+      Some times a lot of feature engineering techniques need to solve this
+      What are the feature engineering techniques especially using Linear regression
+    </p>
+    <ul>
+      <li>
+        <p>
+          If some data do not follow normal distribution we need to transform these,
+          also linear regression sensitive for outliers therefore we need to handle these,
+          if independent variables are correlated with each other this may affect result we
+          need to handle these, also linear regression sensitive for missing values s we need care about missing values
+        </p>
+      </li>
+    </ul>
+  </div>
+
+
+  <!--If  Feature Scaling Important for linear regression?-->
+  <div>
+    <h5>If  Feature Scaling Important for linear regression?</h5>
+    <p>Yes, feature scaling important for linear regression,
+      because this algorithm tries to create the best fit line features,
+      also this algorithm use gradient descent, if we do not use scaling techniques gradient descent,
+      will take more time to reach the global minimum point </p>
+  </div>
+
+
+  <!--How Linear regression impact Outliers?-->
+  <div>
+    <h5>How Linear regression impact Outliers?</h5>
+    <img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41592-019-0369-z/MediaObjects/41592_2019_369_Fig1_HTML.png"   class="img-fluid" width="500px" height="300px">
+
+
+  </div>
+
+  <!--How to measure accuracy in the regression problem -->
+  <div>
+    <h5>How to measure accuracy in the regression problem </h5>
+    <p>In supervised machine learning, we have two kinds of
+      use cases </p>
+    <ul>
+      <li>
+        1)	Regression
+      </li>
+      <li>
+        2)	Classification
+      </li>
+
+    </ul>
+    <p>
+      In classification cases, we use confusion matrix accuracy score true positive rate … etc.
+      But in regression cases, we use R square error and Adjust R Square
+    </p>
+    <b>Calculate R<sup>2</sup> Value :</b><br>
+    <img src="https://miro.medium.com/max/2812/1*JwEiZQSkL4I710994WaY4w.png"   class="img-fluid" width="500px" height="300px">
+    <p>What is a problem with R2 value? </p><br>
+    <p>When the number of features will increase SS<sub>res</sub> will be decreasing
+      SS<sub>tos</sub> also decreasing therefore the number of features are increasing R<sup>2</sup>
+      value will increasing Adjusted R<sup>2</sup> is a solution for this one</p>
+
+    <b>Adjusted R<sup>2</sup> Value :</b><br>
+    <img src="https://miro.medium.com/max/396/1*lXysu66aGmRSnFp_6Akg4g.png"  class="img-fluid" width="500px" height="300px">
+  </div>
+
+
+  <!--Ridge and Lasso Regression :-->
+  <div>
+    <h5>Ridge and Lasso Regression :</h5>
+    <b>What are the use cases of Ridge and lasso regression? </b>
+    <p>In linear regression there will be some overfitting problems,
+      (if our model performs in our training data set in law error but our testing
+      data set in high error this is an overfitting problem )from using ridge and lasso
+      regression we can fix this one. Ridge and lasso regression also use the same methodology
+      in linear regression only difference is a loss function</p>
+    <img src="https://miro.medium.com/max/731/1*BY1MQApANOAyuzYcQzgLKA.png"  class="img-fluid" width="500px" height="300px"><br>
+    <b>How lasso regression use with feature selection</b>
+    <p>The only difference between ridge and lasso regression is
+      in lasso regression we consider the only magnitude, so we can use
+      lasso regression for feature selection also if some feature coefficient
+      values near 0 we can reject  them </p>
+  </div>
+
+  <!--Polynomial Features with Linear Regression-->
+  <div>
+    <h5>Polynomial Features with Linear Regression</h5>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/machine-learning-polynomial-regression.png"  class="img-fluid" width="500px" height="300px">
+    <p>
+      <b> Why we need polynomial regression for regressions</b><br>
+      The goal of polynomial regression is to model a non-linear
+      relationship between the independent and dependent variables.
+      In linear regression algorithm try to create the best fit line,
+      in polynomial regression algorithm try to create the best curve
+
+    </p>
+  </div>
+
+</div>
