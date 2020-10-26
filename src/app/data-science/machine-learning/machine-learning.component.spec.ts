@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { KnnComponent } from './knn.component';
+import { MachineLearningComponent } from './machine-learning.component';
 
-describe('KnnComponent', () => {
-  let component: KnnComponent;
-  let fixture: ComponentFixture<KnnComponent>;
+describe('MachineLearningComponent', () => {
+  let component: MachineLearningComponent;
+  let fixture: ComponentFixture<MachineLearningComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ KnnComponent ]
+      declarations: [ MachineLearningComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(KnnComponent);
+    fixture = TestBed.createComponent(MachineLearningComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

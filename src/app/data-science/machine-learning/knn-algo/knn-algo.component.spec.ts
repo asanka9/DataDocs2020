@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RegressionComponent } from './regression.component';
+import { KnnAlgoComponent } from './knn-algo.component';
 
-describe('RegressionComponent', () => {
-  let component: RegressionComponent;
-  let fixture: ComponentFixture<RegressionComponent>;
+describe('KnnAlgoComponent', () => {
+  let component: KnnAlgoComponent;
+  let fixture: ComponentFixture<KnnAlgoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RegressionComponent ]
+      declarations: [ KnnAlgoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RegressionComponent);
+    fixture = TestBed.createComponent(KnnAlgoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

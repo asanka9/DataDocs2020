@@ -4,27 +4,25 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { DeepLearningComponent } from './deep-learning/deep-learning.component';
-import { ToolsComponent } from './tools/tools.component';
-import { CnnComponent } from './deep-learning/cnn/cnn.component';
-import { EnsembleComponent } from './ensemble/ensemble.component';
-import { RandomForestComponent } from './ensemble/random-forest/random-forest.component';
-import { DecisiontreeComponent } from './decisiontree/decisiontree.component';
-import { RegressionComponent } from './regression/regression.component';
-import { KnnComponent } from './knn/knn.component';
+
+
+import { DataScienceComponent } from './data-science/data-science.component';
+import { MachineLearningComponent } from './data-science/machine-learning/machine-learning.component';
+import { DecisionTreeAlgoComponent } from './data-science/machine-learning/decision-tree-algo/decision-tree-algo.component';
+import { EnsembleTechniquesComponent } from './data-science/machine-learning/ensemble-techniques/ensemble-techniques.component';
+import { RegressionAlgorithmsComponent } from './data-science/machine-learning/regression-algorithms/regression-algorithms.component';
+import { KnnAlgoComponent } from './data-science/machine-learning/knn-algo/knn-algo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    DeepLearningComponent,
-    ToolsComponent,
-    CnnComponent,
-    EnsembleComponent,
-    RandomForestComponent,
-    DecisiontreeComponent,
-    RegressionComponent,
-    KnnComponent
+    DataScienceComponent,
+    MachineLearningComponent,
+    DecisionTreeAlgoComponent,
+    EnsembleTechniquesComponent,
+    RegressionAlgorithmsComponent,
+    KnnAlgoComponent
   ],
   imports: [
     BrowserModule,

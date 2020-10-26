@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EnsembleComponent } from './ensemble.component';
+import { DecisionTreeAlgoComponent } from './decision-tree-algo.component';
 
-describe('EnsembleComponent', () => {
-  let component: EnsembleComponent;
-  let fixture: ComponentFixture<EnsembleComponent>;
+describe('DecisionTreeAlgoComponent', () => {
+  let component: DecisionTreeAlgoComponent;
+  let fixture: ComponentFixture<DecisionTreeAlgoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EnsembleComponent ]
+      declarations: [ DecisionTreeAlgoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EnsembleComponent);
+    fixture = TestBed.createComponent(DecisionTreeAlgoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

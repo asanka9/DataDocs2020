@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CnnComponent } from './cnn.component';
+import { DataScienceComponent } from './data-science.component';
 
-describe('CnnComponent', () => {
-  let component: CnnComponent;
-  let fixture: ComponentFixture<CnnComponent>;
+describe('DataScienceComponent', () => {
+  let component: DataScienceComponent;
+  let fixture: ComponentFixture<DataScienceComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CnnComponent ]
+      declarations: [ DataScienceComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CnnComponent);
+    fixture = TestBed.createComponent(DataScienceComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
