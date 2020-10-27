@@ -1,5 +1,5 @@
 
-<!--
+
 <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg ">
   <a class="navbar-brand" href="#">
     <img src="https://datascience.smu.edu/wp-content/uploads/sites/2/2020/07/machine-learning-icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -51,6 +51,7 @@
           Machine Learning
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="What is Machine Learning?">What is Machine Learning?</a>
           <a class="dropdown-item" routerLink="Decision Tree">Decision Tree Algorithm</a>
           <a class="dropdown-item" routerLink="Regression">Regression Algorithms</a>
 
@@ -77,7 +78,7 @@
           NLP
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" routerLink="Natural Language Processing (NLP)">Natural Language Processing (NLP)</a>
           <a class="dropdown-item" href="#">Another action</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
@@ -115,11 +116,11 @@
 
   </div>
 </nav>
-<div class="container">
-  <h1>Helloo World</h1>
+
+<div class="mt-5 pt-3">
+  <router-outlet></router-outlet>
 </div>
-<router-outlet></router-outlet>
--->
+
 
 
 

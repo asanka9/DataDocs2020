@@ -16,6 +16,10 @@ import { KnnAlgoComponent } from './data-science/machine-learning/knn-algo/knn-a
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MateriaModule } from './materia/materia.module';
 import { from } from 'rxjs';
+import { NlpComponent } from './data-science/nlp/nlp.component';
+import { TextPreprocessing01Component } from './data-science/nlp/text-preprocessing01/text-preprocessing01.component';
+import { TextPreprocessing02Component } from './data-science/nlp/text-preprocessing02/text-preprocessing02.component';
+import { TextPreprocessing03Component } from './data-science/nlp/text-preprocessing03/text-preprocessing03.component';
 
 
 
@@ -29,6 +33,10 @@ import { from } from 'rxjs';
     EnsembleTechniquesComponent,
     RegressionAlgorithmsComponent,
     KnnAlgoComponent,
+    NlpComponent,
+    TextPreprocessing01Component,
+    TextPreprocessing02Component,
+    TextPreprocessing03Component,
 
   ],
   imports: [

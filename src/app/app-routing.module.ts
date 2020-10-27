@@ -7,17 +7,21 @@ import {DeepLearningComponent} from './data-science/deep-learning/deep-learning.
 import {EnsembleTechniquesComponent} from './data-science/machine-learning/ensemble-techniques/ensemble-techniques.component';
 import {RandomForestComponent} from './data-science/machine-learning/ensemble-techniques/random-forest/random-forest.component';
 import {KnnAlgoComponent} from './data-science/machine-learning/knn-algo/knn-algo.component';
+import {MachineLearningComponent} from './data-science/machine-learning/machine-learning.component';
+import {NlpComponent} from './data-science/nlp/nlp.component';
 
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path:'Decision Tree',component:DecisionTreeAlgoComponent},
+  {path: '', component: HomeComponent },
+  {path:'Decision Tree',component:DecisionTreeAlgoComponent},
   {path:'Regression',component:RegressionAlgorithmsComponent},
   {path:'Introduction to ANN',component:DeepLearningComponent},
   {path:'Ensemble Techniques',component:EnsembleTechniquesComponent},
   {path:'Random Forest',component:RandomForestComponent},
-  {path:'K-Nearest Neighbor (KNN) Algorithm',component:KnnAlgoComponent}
+  {path:'K-Nearest Neighbor (KNN) Algorithm',component:KnnAlgoComponent},
+  {path:'What is Machine Learning?',component:MachineLearningComponent},
+  {path:'Natural Language Processing (NLP)',component:NlpComponent}
 ];
 
 @NgModule({

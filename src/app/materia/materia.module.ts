@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
-import {MatStepperModule} from '@angular/material/stepper';
-import {MatButtonModule } from '@angular/material/button';
-const MaterialComponents = [MatSnackBarModule,MatStepperModule,MatButtonModule];
+
+import {MatSidenavModule} from '@angular/material/sidenav';
+const MaterialComponents = [MatSidenavModule];
 
 
 @NgModule({
