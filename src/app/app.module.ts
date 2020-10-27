@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MatCheckbox } from '@angular/material/checkbox';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,11 @@ import { DecisionTreeAlgoComponent } from './data-science/machine-learning/decis
 import { EnsembleTechniquesComponent } from './data-science/machine-learning/ensemble-techniques/ensemble-techniques.component';
 import { RegressionAlgorithmsComponent } from './data-science/machine-learning/regression-algorithms/regression-algorithms.component';
 import { KnnAlgoComponent } from './data-science/machine-learning/knn-algo/knn-algo.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MateriaModule } from './materia/materia.module';
+import { from } from 'rxjs';
+
+
 
 @NgModule({
   declarations: [
@@ -22,11 +28,16 @@ import { KnnAlgoComponent } from './data-science/machine-learning/knn-algo/knn-a
     DecisionTreeAlgoComponent,
     EnsembleTechniquesComponent,
     RegressionAlgorithmsComponent,
-    KnnAlgoComponent
+    KnnAlgoComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MateriaModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
