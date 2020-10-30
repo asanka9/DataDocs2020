@@ -18,6 +18,9 @@ import { MateriaModule } from './materia/materia.module';
 import { from } from 'rxjs';
 import { NlpComponent } from './data-science/nlp/nlp.component';
 import { TextPreprocessing01Component } from './data-science/nlp/text-preprocessing01/text-preprocessing01.component';
+import { RnnComponent } from './data-science/deep-learning/rnn/rnn.component';
+import { CnnComponent } from './data-science/deep-learning/cnn/cnn.component';
+import { DeepLearningRnnComponent } from './data-science/nlp/deep-learning-rnn/deep-learning-rnn.component';
 
 
 
@@ -33,6 +36,9 @@ import { TextPreprocessing01Component } from './data-science/nlp/text-preprocess
     KnnAlgoComponent,
     NlpComponent,
     TextPreprocessing01Component,
+    RnnComponent,
+    CnnComponent,
+    DeepLearningRnnComponent,
 
   ],
   imports: [

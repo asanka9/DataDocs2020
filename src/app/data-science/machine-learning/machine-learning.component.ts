@@ -10,6 +10,8 @@ export class MachineLearningComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+
   }
 
 }

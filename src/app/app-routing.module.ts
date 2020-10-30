@@ -10,7 +10,8 @@ import {KnnAlgoComponent} from './data-science/machine-learning/knn-algo/knn-alg
 import {MachineLearningComponent} from './data-science/machine-learning/machine-learning.component';
 import {NlpComponent} from './data-science/nlp/nlp.component';
 import {TextPreprocessing01Component} from './data-science/nlp/text-preprocessing01/text-preprocessing01.component';
-
+import {RnnComponent} from './data-science/deep-learning/rnn/rnn.component';
+import {DeepLearningRnnComponent} from './data-science/nlp/deep-learning-rnn/deep-learning-rnn.component';
 
 
 
@@ -24,7 +25,9 @@ const routes: Routes = [
   {path:'K-Nearest Neighbor (KNN) Algorithm',component:KnnAlgoComponent},
   {path:'What is Machine Learning?',component:MachineLearningComponent},
   {path:'Natural Language Processing (NLP)',component:NlpComponent},
-  {path:'Machine Learning with NLP',component:TextPreprocessing01Component},
+  {path:'NLP with Machine Learning',component:TextPreprocessing01Component},
+  {path:'Recurrent Nueral Network (RNN)',component:RnnComponent},
+  {path:'NLP with Deep Learning',component:DeepLearningRnnComponent}
 
 ];
 

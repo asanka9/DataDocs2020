@@ -1,0 +1,87 @@
+<div class="container">
+  <!--Recurrent Nueral Network-->
+  <div>
+    <h5>Why the Recurrent Neural Network (RNN) required to NLP?</h5>
+    <p>When we applying machine learning techniques for
+      NLP it will discard sequential information of data RNN works very well with sequential data </p>
+  </div>
+
+
+  <!--Applications of Recurrent Neural Networks (RNNs)-->
+  <div>
+    <h5>Applications of Recurrent Neural Networks (RNNs)</h5>
+    <ul>
+      <li>Prediction problems</li>
+      <li>Language Modelling and Generating Text</li>
+      <li>Text Summarization</li>
+      <li>Time Series Analysis </li>
+      <li>Speech Recognition</li>
+      <li>Call Center Analysis</li>
+    </ul>
+  </div>
+
+  <!--RNN with Forwad Propergation-->
+  <div>
+    <h5>RNN with Forwad Propergation</h5>
+    <img src="https://miro.medium.com/max/5004/1*ccHxugJhQo7VH4GAAZt3Sg.png"  class="img-fluid" width="600px" height="400px">
+    <p>
+      first, we need to find the general architecture of RNN.
+      we can use any number of dimensions as our input layer.
+      suppose we have a sentiment analytics use case, we need to determine whether
+      that is a positive or negative review. each time it takes one word at a time and sents
+      its output to the next particular neuron, therefore sequence information is kept.
+      In RNN we can use any number of hidden Neurons as our need and each input word represent as vector
+    </p>
+  </div>
+
+  <!--Back Propagation In Recurrent Neural Network-->
+  <div>
+    <h5>RNN with Back Propergation</h5>
+    <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0959438818302009-gr1.jpg"  class="img-fluid" width="600px" height="400px">
+    <p>The main thing in backpropagation is weight updating,
+      this is very important because of that only we can reach the global
+      minima point in the gradient descent. we can also apply the chain rule here </p>
+  </div>
+
+
+  <!--Problems in Simple Recurrent Neural Network-->
+  <div>
+    <h5>Problems in Simple Recurrent Neural Network</h5>
+    <img src="https://miro.medium.com/max/4000/0*ET_iHvyIb0eNBzD9.jpeg" class="img-fluid" width="500px" height="300px">
+    <p>in hidden layers applying some activation function in each neuron.
+      vanishing gradient problem happens when weight changes are very negligible.
+      this may happen with like sigmoid activation function because of derivative
+      value is between 0 - 0.25 in the sigmoid activation function. Exploding gradient
+      problem happens when weight changes happen so large, it will never reach the global minima point.
+      because of these reasons we use LSTM architecture solves these problems</p>
+    <img src="https://miro.medium.com/max/1200/1*An4tZEyQAYgPAZl396JzWg.png" class="img-fluid" width="500px" height="300px">
+  </div>
+
+  <!--LSTM ( Long Short Term Memory ) RNN-->
+  <div>
+    <h5>LSTM ( Long Short Term Memory ) RNN</h5>
+    <img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-chain.png" class="img-fluid" width="500px" height="300px"><br><br>
+    <img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM2-notation.png"class="img-fluid" width="500px" height="300px"><br><br>
+    <b>We can divide LSTM into various components</b>
+    <ul>
+      <li>Memory Cell</li>
+      <img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-C-line.png" class="img-fluid" width="500px" height="300px">
+      <p>Memory cells are used for remembering and forgetting things
+        based on the context of the input. here keeping adding some
+        information and remove some information based on the context.
+        here use pointwise operation and forgetting some information and adding some information in here</p>
+      <li>Forget Gate</li>
+      <img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-focus-f.png" class="img-fluid" width="500px" height="300px">
+      <p>Here we concatenate input and previous one's output and apply a
+        sigmoid activation function. sigmoid activation function convert output 0 or 1 </p>
+      <li>Input Gate</li>
+      <img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-focus-i.png" class="img-fluid" width="500px" height="300px">
+      <p>tanh activation function convert value between -1 to 1 and sigmoid activation funtion </p>
+      <li>Output Gate</li>
+      <img src="https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-focus-o.png" class="img-fluid" width="500px" height="300px">
+
+    </ul>
+  </div>
+
+
+  </div>
