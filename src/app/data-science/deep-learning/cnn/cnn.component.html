@@ -1,1 +1,125 @@
-<p>cnn works!</p>
+<div class="container">
+
+  <!--What is CNN-->
+  <div>
+    <h5>What is Convolution Nueral Network</h5>
+    <p>//Explain</p>
+  </div>
+
+  <!--CNN-->
+  <div>
+    <h5>Convolution Nueral Network (CNN) & Human Brain</h5>
+    <img src="https://i.pinimg.com/originals/24/41/7a/24417a62fd9fc18a638202d0a56c676c.jpg" class="img-fluid" width="300px" height="100px"><br>
+    <p><b>What do you see when you look at this image.</b><br>
+      Do you see a person looking at you or do you see a person looking to the right you can see that your
+      the brain is struggling to adjust if you look to the right side of the image.
+      Just look at the right border there which you'll see a person looking to the right.
+      If you look at the left border of the image you'll see a person looking at you.
+      And this just proves that what our brain is looking for when we see things are features depending on
+      the features that it sees depending on the features that you process.
+      You categorize things in certain ways.
+      So when you look on the right side of the image you see certain features of a person looking to ride
+      because they're closer to your center of focus and therefore your brain classifies as a person looking
+      to the right.
+      When you look to the left side of the image you see more features of a person looking at you and therefore
+      your brain's <a href="https://en.wikipedia.org/wiki/Visual_cortex#:~:text=The%20visual%20cortex%20of%20the,then%20reaches%20the%20visual%20cortex.">visual cortex </a>classifies it as such.</p><br>
+
+      <p>In the visual cortex, we have multiple layers ( v1,v2,v3,v4,v5,v6 )
+        these each layer responsible for doing special tasks. some layers responsible
+        for finding the edges of a particular image and someone responsible for finding
+        special information from images etc. Each layer passes its information to another layer.
+        This is a process in the human brain and let's see how <b>CNN</b> do these tasks.</p>
+  </div>
+
+
+  <!--What is Convolution-->
+  <div>
+    <h5>What is Convolution</h5>
+    <img src="https://media5.datahacker.rs/2018/11/06_01_2_3D.png"  class="img-fluid" width="500px" height="300px">
+    <p>In CNN grayscale image represented with a 2D array and colored image represent
+      with a 3D array and each channel's pixel between 0 - 255 and we can reduce these value (0 to 1)
+      by applying feature scaling techniques (Min-Max Scaler)</p><br>
+    <b>What is filter</b>
+    <img src="">
+    <p>In CNN grayscale image represented with a 2D array and
+      colored image represent with a 3D array and each channel's pixel
+      between 0 - 255 and we can reduce these value by applying feature scaling techniques (Min-Max Scaler)</p>
+
+    <img src="https://anhreynolds.com/img/cnn.png" class="img-fluid" width="500px" height="300px">
+    <p>Convolution has placed the filter on the image and multiple each one and get a
+      summation, after jumping one to the right and apply the same operation.
+      if we can not jumping on the right we have to come one step down. Finally, we get output   </p>
+    <img src="https://www.andreaperlato.com/img/cnnfilter.png" class="img-fluid" width="500px" height="300px">
+    <p>After getting this output we can apply Min-Max Scaler for converting all values between 0 to 1</p>
+    <img src="https://media5.datahacker.rs/2018/11/conc_3_1.png" class="img-fluid" width="500px" height="300px">
+    <p><i>This is an example of a vertical edge detector</i></p>
+    <img src="https://pyimagesearch.com/wp-content/uploads/2019/03/holistically_nested_edge_detection_cat.png" class="img-fluid" width="500px" height="300px"><br>
+    <i>This shows how the output looks like after applying the edge detect filter </i><br><br>
+    <p>In CNN we can use different filter sizes and any number of filters as our need.In the above example initially, our input is
+      6*6 but the output is 4*4, here losing some information. we can apply padding for prevent this </p>
+
+  </div>
+
+  <!--Padding-->
+  <div>
+    <h5>Padding</h5>
+    <img src="https://media5.datahacker.rs/2018/11/sl_1.png" class="img-fluid" width="500px" height="300px">
+    <p>In the above, we explain why we need Padding.
+      Here we adding columns and raws on the right side,
+      left side bottom, up and down. In here our input size and the output size is the same, here does not lose any information </p>
+    <p>We can add zero padding or add values according to neighbous value</p>
+    <img src="https://www.analyticsvidhya.com/wp-content/uploads/2016/03/fig-6.png" class="img-fluid" width="300px" height="300px">
+  </div>
+
+  <!--Max  Pooling-->
+  <div>
+    <h5>Pooling</h5>
+    //Explain
+    <ul>
+      <li>Max Pooling</li>
+      <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190721025744/Screenshot-2019-07-21-at-2.57.13-AM.png" class="img-fluid" width="450px" height="300px">
+      <li>Min Pooling</li>
+      <img src="data:image/png;base64,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" class="img-fluid" width="300px" height="300px">
+      <li>Average pooling</li>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSkU3WxYOHMc4dgjwXUiOOukbEl1QERi_1ckA&usqp=CAU"  class="img-fluid" width="400px" height="300px">
+    </ul>
+  </div>
+
+  <!--Flattening-->
+  <div>
+    <h5>Flattening</h5>
+    <img src="https://miro.medium.com/max/1732/0*4afqrwiDydc8hw7g"   class="img-fluid" width="500px" height="300px">
+    <p>convolution operation to our image and then we apply pooling to the result of the collision which the
+      involved image.
+      And so what are we going to do if this puled feature map.
+      Well, we're going to take it and we're going to flatten it into a column.
+      So basically just take the numbers row by row and put them into this one long column.
+      And the reason for that is because we want to later input this into an artificial neural network for
+      further processing.</p>
+  </div>
+
+  <!--ANN vs CNN-->
+  <div>
+    <h5>ANN Vs CNN</h5>
+    //Explain
+    <img src="https://miro.medium.com/max/3288/1*uAeANQIOQPqWZnnuH-VEyw.jpeg" class="img-fluid" width="600px" height="300px">
+    <br>
+    <b>What are the fully connected layers</b>
+    <p>These are hidden layes in ANN, Here we call this as fully-connected layers</p>
+
+    <b>How Back Propagation Works</b><br>
+    <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0893608015001896-gr2.jpg" class="img-fluid" width="600px" height="300px">
+
+  </div>
+
+  <!--Data Argumentation With CNN-->
+  <div>
+    <h5>Data Argumentation With CNN</h5>
+    <img src="https://miro.medium.com/max/3692/1*Ukc49J8TzyxiOD30EqOWwQ.png" class="img-fluid" width="600px" height="300px">
+    <p>When we solving CNN we need an image data set.
+      In support of data argumentation, we can transform images into different images.
+      Suppose we have a very less number of data set, if we applying this technique
+      we can increase our data set and it is a reason for generating robust CNN model</p>
+  </div>
+
+</div>

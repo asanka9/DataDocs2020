@@ -12,7 +12,7 @@ import {NlpComponent} from './data-science/nlp/nlp.component';
 import {TextPreprocessing01Component} from './data-science/nlp/text-preprocessing01/text-preprocessing01.component';
 import {RnnComponent} from './data-science/deep-learning/rnn/rnn.component';
 import {DeepLearningRnnComponent} from './data-science/nlp/deep-learning-rnn/deep-learning-rnn.component';
-
+import {CnnComponent} from './data-science/deep-learning/cnn/cnn.component';
 
 
 const routes: Routes = [
@@ -27,7 +27,8 @@ const routes: Routes = [
   {path:'Natural Language Processing (NLP)',component:NlpComponent},
   {path:'NLP with Machine Learning',component:TextPreprocessing01Component},
   {path:'Recurrent Nueral Network (RNN)',component:RnnComponent},
-  {path:'NLP with Deep Learning',component:DeepLearningRnnComponent}
+  {path:'NLP with Deep Learning',component:DeepLearningRnnComponent},
+  {path:'Convolution Nueral Network (CNN)',component:CnnComponent}
 
 ];
 
