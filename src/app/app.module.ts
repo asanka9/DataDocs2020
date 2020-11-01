@@ -21,6 +21,7 @@ import { TextPreprocessing01Component } from './data-science/nlp/text-preprocess
 import { RnnComponent } from './data-science/deep-learning/rnn/rnn.component';
 import { CnnComponent } from './data-science/deep-learning/cnn/cnn.component';
 import { DeepLearningRnnComponent } from './data-science/nlp/deep-learning-rnn/deep-learning-rnn.component';
+import { StaticsComponent } from './data-science/statics/statics.component';
 
 
 
@@ -39,6 +40,7 @@ import { DeepLearningRnnComponent } from './data-science/nlp/deep-learning-rnn/d
     RnnComponent,
     CnnComponent,
     DeepLearningRnnComponent,
+    StaticsComponent,
 
   ],
   imports: [
