@@ -1,0 +1,123 @@
+<div class="container">
+
+  <img src="https://image.flaticon.com/icons/png/512/3344/3344220.png" class="img-fluid"  width="300px" height="300px">
+
+  <!--Dimensionality Reduction-->
+  <div>
+    <h5>Dimensionality Reduction</h5>
+    <b>Types of Dimensionality Reduction</b>
+    <ul>
+      <li>Feature Selection</li>
+      <li>Feature Extraction</li>
+      <ul>
+        <li>Pricipal Component Analytics</li>
+      </ul>
+    </ul>
+  </div>
+
+  <!--Feature Selection-->
+  <div>
+    <h5>Why need feature selection? </h5>
+    <ul>
+      <li>Shorter Training Time</li>
+      <li>Easier to interpret the model</li>
+      <li>Reduce Overfitting</li>
+      <li>Improves Accurancy</li>
+    </ul>
+  </div>
+
+  <!--Feature Selection Methods-->
+  <div>
+    <h5>Feature Selection Methods</h5>
+    <img src="https://benthamopen.com/contents/figures/TOBIOIJ/TOBIOIJ-11-117_F3.jpg" class="img-fluid"  width="500px" height="300px">
+    <table class="table">
+      <thead>
+        <tr>
+
+          <th scope="col">Filter Method</th>
+          <th scope="col">Wrapper Method</th>
+          <th scope="col">Embedded Method</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+
+          <td>Single Factor Analysis</td>
+          <td>Use combinations of variables to determine predective power</td>
+          <td>Faster than wapper method</td>
+        </tr>
+        <tr>
+
+          <td>Use Statistical algorithoms</td>
+          <td>Perform better than filter method</td>
+          <td>More accurate than filter Method</td>
+        </tr>
+        <tr>
+          <td>Uses Individual Feature Predective Power</td>
+          <td>Find the best combination of variable & Not recomended on high number of features</td>
+          <td>Performe feature selection during algorithom implementation thus embeded in it</td>
+        </tr>
+        <tr>
+          <td>Less computationally expensive</td>
+          <td>Computationally expensive than filter method</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <img src="https://michael-fuchs-python.netlify.app/post/2019-10-14-roadmap-for-regression-analysis_files/p22p1.png" class="img-fluid"  width="700px" height="500px">
+
+  </div>
+
+
+  <!--Filter Methods-->
+  <div>
+    <h5>Filter Methods</h5>
+
+    <ul>
+      <li><b>Dropping constant features</b></li>
+
+      <li><b>Removing the highly correlated features</b></li>
+    </ul>
+
+    <b><i>feature selection with sk-learn</i></b>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://scikit-learn.org/stable/modules/feature_selection.html" allowfullscreen></iframe>
+    </div>
+
+  </div>
+
+
+
+  <!--Wrapper Methods-->
+  <div>
+    <h5>Wrapper Methods</h5>
+    <img src="https://www.analyticsvidhya.com/wp-content/uploads/2016/11/Wrapper_1.png" class="img-fluid"  width="700px" height="700px">
+    <ul>
+      <li><b>Forwad Step Selection</b></li>
+      <img src="https://miro.medium.com/max/3200/1*N105in3SvDixK_mbWpXFZg.png" class="img-fluid"  width="500px" height="500px">
+      <p>Let's say we have 100 features and out of 100 features we want to get the best subset 10 features, our model start building from 1 feature to 2,3,4.. like this and
+        and it keeps on until we get our whole 10 features, this is known as forwarding step selection
+      </p>
+
+      <li><b>Backward Step Selection</b></li>
+      <img src="https://mlux9brz2apw.i.optimole.com/y1pDtVQ-KwRdHcGX/w:1024/h:570/q:auto/https://kgptalkie.com/wp-content/uploads/2020/08/image-174.png" class="img-fluid"  width="700px" height="700px">
+      <p>In Backward step selection first, it tries to get performance with all features and then it tries to remove one feature ad then it
+        get maximally feature subset
+      </p>
+    </ul>
+  </div>
+
+  <!--Feature Extraction with Principal Component Analysis-->
+  <div>
+    <h5>Feature Extraction with Principal Component Analysis (PCA) </h5>
+    <p>Let's discuss PCA! Since this isn't exactly a
+      full machine learning algorithm, but instead an unsupervised learning algorithm</p>
+    <img src="https://miro.medium.com/max/1200/1*V3JWBvxB92Uo116Bpxa3Tw.png" class="img-fluid"  width="700px" height="500px">
+    <p>Originally data have two dimensions data we need to
+      convert these two dimensions to one dimension.this algorithm calculate
+      best-fit line and this is  one axis </p>
+  </div>
+
+
+
+</div>

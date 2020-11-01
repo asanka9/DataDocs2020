@@ -22,6 +22,9 @@ import { RnnComponent } from './data-science/deep-learning/rnn/rnn.component';
 import { CnnComponent } from './data-science/deep-learning/cnn/cnn.component';
 import { DeepLearningRnnComponent } from './data-science/nlp/deep-learning-rnn/deep-learning-rnn.component';
 import { StaticsComponent } from './data-science/statics/statics.component';
+import { LifeCycleComponent } from './data-science/life-cycle/life-cycle.component';
+import { DimensionReductionComponent } from './data-science/life-cycle/dimension-reduction/dimension-reduction.component';
+import { ArComponent } from './data-science/computer-vision/ar/ar.component';
 
 
 
@@ -41,6 +44,9 @@ import { StaticsComponent } from './data-science/statics/statics.component';
     CnnComponent,
     DeepLearningRnnComponent,
     StaticsComponent,
+    LifeCycleComponent,
+    DimensionReductionComponent,
+    ArComponent,
 
   ],
   imports: [

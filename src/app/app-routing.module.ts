@@ -13,7 +13,8 @@ import {TextPreprocessing01Component} from './data-science/nlp/text-preprocessin
 import {RnnComponent} from './data-science/deep-learning/rnn/rnn.component';
 import {DeepLearningRnnComponent} from './data-science/nlp/deep-learning-rnn/deep-learning-rnn.component';
 import {CnnComponent} from './data-science/deep-learning/cnn/cnn.component';
-
+import {DimensionReductionComponent} from './data-science/life-cycle/dimension-reduction/dimension-reduction.component';
+import {ArComponent} from './data-science/computer-vision/ar/ar.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent },
@@ -28,7 +29,9 @@ const routes: Routes = [
   {path:'NLP with Machine Learning',component:TextPreprocessing01Component},
   {path:'Recurrent Nueral Network (RNN)',component:RnnComponent},
   {path:'NLP with Deep Learning',component:DeepLearningRnnComponent},
-  {path:'Convolution Nueral Network (CNN)',component:CnnComponent}
+  {path:'Convolution Nueral Network (CNN)',component:CnnComponent},
+  {path:'Dimensionality Reduction',component:DimensionReductionComponent},
+  {path:'Augmented reality (AR)',component:ArComponent}
 
 ];
 
