@@ -15,6 +15,8 @@ import {DeepLearningRnnComponent} from './data-science/nlp/deep-learning-rnn/dee
 import {CnnComponent} from './data-science/deep-learning/cnn/cnn.component';
 import {DimensionReductionComponent} from './data-science/life-cycle/dimension-reduction/dimension-reduction.component';
 import {ArComponent} from './data-science/computer-vision/ar/ar.component';
+import {FeatureEngnrngComponent} from './data-science/life-cycle/feature-engnrng/feature-engnrng.component';
+import {LifeCycleComponent} from './data-science/life-cycle/life-cycle.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent },
@@ -31,7 +33,9 @@ const routes: Routes = [
   {path:'NLP with Deep Learning',component:DeepLearningRnnComponent},
   {path:'Convolution Nueral Network (CNN)',component:CnnComponent},
   {path:'Dimensionality Reduction',component:DimensionReductionComponent},
-  {path:'Augmented reality (AR)',component:ArComponent}
+  {path:'Augmented reality (AR)',component:ArComponent},
+  {path:'Feature Engineering',component:FeatureEngnrngComponent},
+  {path:'Life Cycle Of Data Science',component:LifeCycleComponent}
 
 ];
 

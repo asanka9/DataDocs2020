@@ -25,6 +25,7 @@ import { StaticsComponent } from './data-science/statics/statics.component';
 import { LifeCycleComponent } from './data-science/life-cycle/life-cycle.component';
 import { DimensionReductionComponent } from './data-science/life-cycle/dimension-reduction/dimension-reduction.component';
 import { ArComponent } from './data-science/computer-vision/ar/ar.component';
+import { FeatureEngnrngComponent } from './data-science/life-cycle/feature-engnrng/feature-engnrng.component';
 
 
 
@@ -47,6 +48,7 @@ import { ArComponent } from './data-science/computer-vision/ar/ar.component';
     LifeCycleComponent,
     DimensionReductionComponent,
     ArComponent,
+    FeatureEngnrngComponent,
 
   ],
   imports: [
