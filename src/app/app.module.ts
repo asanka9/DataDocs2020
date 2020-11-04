@@ -26,6 +26,9 @@ import { LifeCycleComponent } from './data-science/life-cycle/life-cycle.compone
 import { DimensionReductionComponent } from './data-science/life-cycle/dimension-reduction/dimension-reduction.component';
 import { ArComponent } from './data-science/computer-vision/ar/ar.component';
 import { FeatureEngnrngComponent } from './data-science/life-cycle/feature-engnrng/feature-engnrng.component';
+import { OpencvComponent } from './data-science/computer-vision/opencv/opencv.component';
+import { ProjectsComponent } from './data-science/projects/projects.component';
+import { TransferLearningComponent } from './data-science/deep-learning/cnn/transfer-learning/transfer-learning.component';
 
 
 
@@ -49,6 +52,9 @@ import { FeatureEngnrngComponent } from './data-science/life-cycle/feature-engnr
     DimensionReductionComponent,
     ArComponent,
     FeatureEngnrngComponent,
+    OpencvComponent,
+    ProjectsComponent,
+    TransferLearningComponent,
 
   ],
   imports: [

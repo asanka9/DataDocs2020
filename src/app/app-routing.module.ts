@@ -17,6 +17,10 @@ import {DimensionReductionComponent} from './data-science/life-cycle/dimension-r
 import {ArComponent} from './data-science/computer-vision/ar/ar.component';
 import {FeatureEngnrngComponent} from './data-science/life-cycle/feature-engnrng/feature-engnrng.component';
 import {LifeCycleComponent} from './data-science/life-cycle/life-cycle.component';
+import {StaticsComponent} from './data-science/statics/statics.component';
+import {OpencvComponent} from './data-science/computer-vision/opencv/opencv.component';
+import {ProjectsComponent} from './data-science/projects/projects.component';
+import {TransferLearningComponent}  from './data-science/deep-learning/cnn/transfer-learning/transfer-learning.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent },
@@ -35,7 +39,11 @@ const routes: Routes = [
   {path:'Dimensionality Reduction',component:DimensionReductionComponent},
   {path:'Augmented reality (AR)',component:ArComponent},
   {path:'Feature Engineering',component:FeatureEngnrngComponent},
-  {path:'Life Cycle Of Data Science',component:LifeCycleComponent}
+  {path:'Life Cycle Of Data Science',component:LifeCycleComponent},
+  {path:'Statics',component:StaticsComponent},
+  {path:'Open CV',component:OpencvComponent},
+  {path:'Projects',component:ProjectsComponent},
+  {path:'Transfer Learning with CNN',component:TransferLearningComponent}
 
 ];
 
