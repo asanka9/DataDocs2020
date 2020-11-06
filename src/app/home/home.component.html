@@ -1,83 +1,94 @@
 <div class="container">
 
-  <!--Support Vector Machine-->
   <div>
-    <h5>Support Vector Machine</h5>
-    <p>A support vector machine can use both classification and regression cases.
-      fist we consider how this algorithm works with classification</p>
+    <h5>XG - BOost, AdaBoost, Gradient - Boost </h5>
+    <img src="https://i.ytimg.com/vi/kho6oANGu_A/maxresdefault.jpg"  class="img-fluid" width="500px" height="300px">
   </div>
 
-  <!--What Are the Assumptions-->
+  <!--What Are the Basic Assumption?-->
   <div>
     <h5>What Are the Basic Assumption?</h5>
     <p>There are no such assumptions</p>
   </div>
 
-  <!--Advantages-->
+  <!--Missing Values¶-->
   <div>
-    <h5>Advantages</h5>
+    <h5>Missing Values¶</h5>
     <ul>
-      <li>SVM is more effective in high dimensional spaces.</li>
-      <li>SVM is relatively memory efficient.</li>
-      <li>SVM’s are very good when we have no idea on the data.</li>
-      <li>Works well with even unstructured and semi structured data like text, Images and trees.</li>
-      <li>The kernel trick is real strength of SVM. With an appropriate kernel function, we can solve any complex problem.</li>
-      <li>SVM models have generalization in practice, the risk of over-fitting is less in SVM.</li>
+      <li>Adaboost can handle mising values</li>
+      <li>Xgboosst and GBoost cannot handle missing values</li>
     </ul>
   </div>
 
-  <div>
-    <h5>Disadvantages</h5>
-    <ul>
-      <li>More Training Time is required for larger dataset</li>
-      <li>It is difficult to choose a good kernel function</li>
-      <li>The SVM hyper parameters are Cost -C and gamma. It is not that easy to fine-tune these hyper-parameters. It is hard to visualize their impact</li>
-    </ul>
-  </div>
 
-  <div>
-    <h5>Types of Problems it can solve(Supervised)</h5>
-    <ul>
-      <li>Regression</li>
-      <li>Classification</li>
-    </ul>
-  </div>
-
-  <div>
-    <h5>Whether Feature Scaling is required?</h5>
-    <p>Yes</p>
-  </div>
-
-  <div>
-    <h5>Overfitting And Underfitting</h5>
-    <p>In SVM, to avoid overfitting, we choose a Soft Margin,
-      instead of a Hard one i.e. we let some data points enter our margin
-      intentionally (but we still penalize it) so that our classifier don't overfit on our training sample</p>
-  </div>
-
-  <div>
-    <h5>Different Problem statement you can solve using Naive Baye's</h5>
-    <ul>
-      <li>We can use SVM with every ANN usecases</li>
-      <li>Intrusion Detection</li>
-      <li>Handwriting Recognition</li>
-    </ul>
-  </div>
-
+  <!--Performance Metrics-->
   <div>
     <h5>Performance Metrics</h5>
     <ul>
-      <li>Classification</li>
-      <ul>
-        <li>Confusion Matrix</li>
-        <li>Precision,Recall, F1 score</li>
-      </ul>
-      <li>Regression</li>
-      <ul>
-        <li>R2,Adjusted R2</li>
-        <li>MSE,RMSE,MAE</li>
-      </ul>
+      <li>
+        Classification
+        <ul>
+          <li>Confusion Matrix</li>
+          <li>Precision,Recall, F1 score</li>
+        </ul>
+
+      </li>
+      <li>
+        Regression
+        <ul>
+          <li>R<sup>2</sup>,Adjusted R<sup>2</sup></li>
+          <li>MSE,RMSE,MAE</li>
+        </ul>
+      </li>
     </ul>
+  </div>
+
+  <!--Types of Problems it can solve(Supervised)-->
+  <div>
+    <h5>Types of Problems it can solve(Supervised)</h5>
+    <ul>
+      <li>Classification</li>
+      <li>Regression</li>
+    </ul>
+  </div>
+
+  <!--Whether Feature Scaling is required?-->
+  <div>
+    <h5>Whether Feature Scaling is required?</h5>
+    <p>No</p>
+  </div>
+
+
+  <!--
+
+2. Advantages
+Advantages of Adaboost
+
+Doesn't Overfit
+
+It has few parameters to tune
+
+Advantages of Gradient Boost And Xgboost
+
+It has a great performance
+It can solve complex non linear functions
+It is better in solve any kind of ML usecases.
+3. Disadvantages
+Disadvantages of Gradient Boosting And Xgboost
+
+1.It requires some amount of parameter tuning
+  -->
+
+  <!--Advantages-->
+  <div>
+    <h5>Advantages</h5>
+
+  </div>
+
+
+  <!--Disadvantages-->
+  <div>
+    <h5>Disadvantages</h5>
   </div>
 
 </div>

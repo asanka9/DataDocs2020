@@ -29,6 +29,9 @@ import { FeatureEngnrngComponent } from './data-science/life-cycle/feature-engnr
 import { OpencvComponent } from './data-science/computer-vision/opencv/opencv.component';
 import { ProjectsComponent } from './data-science/projects/projects.component';
 import { TransferLearningComponent } from './data-science/deep-learning/cnn/transfer-learning/transfer-learning.component';
+import { SvmComponent } from './data-science/machine-learning/svm/svm.component';
+import { ClassificationInfoComponent } from './data-science/machine-learning/classification-info/classification-info.component';
+import { LogisticRegressionComponent } from './data-science/machine-learning/logistic-regression/logistic-regression.component';
 
 
 
@@ -55,6 +58,9 @@ import { TransferLearningComponent } from './data-science/deep-learning/cnn/tran
     OpencvComponent,
     ProjectsComponent,
     TransferLearningComponent,
+    SvmComponent,
+    ClassificationInfoComponent,
+    LogisticRegressionComponent,
 
   ],
   imports: [
