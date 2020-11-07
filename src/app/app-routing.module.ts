@@ -23,6 +23,7 @@ import {ProjectsComponent} from './data-science/projects/projects.component';
 import {TransferLearningComponent}  from './data-science/deep-learning/cnn/transfer-learning/transfer-learning.component';
 import {SvmComponent} from './data-science/machine-learning/svm/svm.component';
 import {LogisticRegressionComponent} from './data-science/machine-learning/logistic-regression/logistic-regression.component';
+import {BoostingxagComponent} from './data-science/machine-learning/boostingxag/boostingxag.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent },
@@ -47,7 +48,8 @@ const routes: Routes = [
   {path:'Projects',component:ProjectsComponent},
   {path:'Transfer Learning with CNN',component:TransferLearningComponent},
   {path:'Support Vector Machine ( SVM )',component:SvmComponent},
-  {path:'Logistic RRegression',component:LogisticRegressionComponent}
+  {path:'Logistic RRegression',component:LogisticRegressionComponent},
+  {path:'Boosting Techniques',component:BoostingxagComponent}
 
 ];
 

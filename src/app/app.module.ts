@@ -32,6 +32,7 @@ import { TransferLearningComponent } from './data-science/deep-learning/cnn/tran
 import { SvmComponent } from './data-science/machine-learning/svm/svm.component';
 import { ClassificationInfoComponent } from './data-science/machine-learning/classification-info/classification-info.component';
 import { LogisticRegressionComponent } from './data-science/machine-learning/logistic-regression/logistic-regression.component';
+import { BoostingxagComponent } from './data-science/machine-learning/boostingxag/boostingxag.component';
 
 
 
@@ -61,6 +62,7 @@ import { LogisticRegressionComponent } from './data-science/machine-learning/log
     SvmComponent,
     ClassificationInfoComponent,
     LogisticRegressionComponent,
+    BoostingxagComponent,
 
   ],
   imports: [
