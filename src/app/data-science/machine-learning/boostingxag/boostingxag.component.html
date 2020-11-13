@@ -5,6 +5,86 @@
     <img src="https://i.ytimg.com/vi/kho6oANGu_A/maxresdefault.jpg"  class="img-fluid" width="500px" height="300px">
   </div>
 
+  <!--AdaBoost-->
+  <div>
+    <h5>AdaBoost</h5>
+    <p>In Random forest, we make a full-size tree each time and some tree
+      bigger than others. there is no predetermined maximum depth but in a
+      forest of the tree made with AdaBoost there are usually have just node and two leaves
+      and these ones called stumps
+    </p>
+    <img src="https://miro.medium.com/max/1816/1*T05Bc04k-8HmQB289O1VLA.png" class="img-fluid" width="500px" height="300px">
+    <p>These stumps are weak learners and they
+      combined each other. In a Random forest, each tree has an equal
+      vote for the final output but Stumps get more say than others for final output </p>
+    <img src="https://miro.medium.com/max/2212/1*ceYluz4NqT-BdKBJanWCxQ.png" class="img-fluid" width="500px" height="300px">
+    <p>  Random forest order is not important for making
+      decision trees but Adagboost order is important for making
+      stumps and error of first fist stump made influence how the second stump made
+    </p>
+    <img src="https://miro.medium.com/max/2512/1*3m58rXsO4q-pigZXcuc-tg.png" class="img-fluid" width="500px" height="300px">
+    <br>
+    <b>AdaBoost With Classification </b><br>
+    <img src="https://miro.medium.com/max/875/1*z8zdyJ3tKniPQVh1xG3hzw.png" class="img-fluid" width="500px" height="300px">
+    <p>First, we need to calculate sample weights
+      and start we get some weights and that makes all
+      samples equally important. However when we create the
+      first stump these sample weights will change </p>
+    <img src="https://miro.medium.com/max/1864/1*PbzWI7WyW6gaa77yi6mjTA.png" class="img-fluid" width="500px" height="300px">
+    <p>Here we have 3  Variables Chest Pain,
+      Blocked Arteries, Patient Weight are these variables now we need calculate the Gini index for each variable.
+      and get the lowest variable which has the lowest Gini index</p>
+    <img src="https://miro.medium.com/max/875/1*VaKKTxOOih-yGpUZH2GwFg.png" class="img-fluid" width="500px" height="300px"><br>
+    <img src="https://miro.medium.com/max/875/1*jlAX8qzUIz-gpHTgpHbFqQ.png" class="img-fluid" width="500px" height="300px">
+    <img src="https://miro.medium.com/max/875/1*1XUtzVcICDY8tkV0SYaHwg.png" class="img-fluid" width="500px" height="300px">
+    <img src="https://miro.medium.com/max/875/1*BidjoWue5If3_47x45dRSw.png" class="img-fluid" width="500px" height="300px">
+    <p>After we create find Stump we calculate the Total error, Here total error is 1/8 and after we need calculate
+      amount of say using below graph or formula
+    </p>
+    <img src="https://miro.medium.com/max/875/1*0IrMahu3igxKTrRBBG4zNg.png" class="img-fluid" width="500px" height="300px"><br>
+    <img src="https://miro.medium.com/max/875/1*nAjVrgjz19pKVnGc--EInw.png" class="img-fluid" width="500px" height="300px">
+    <img src="https://www.notion.so/image/http%3A%2F%2Fchrisjmccormick.files.wordpress.com%2F2013%2F12%2Fadaboost_alphacurve.png?table=block&id=9c43a3a4-8318-4035-852a-52628778c4e3&width=2560&cache=v2" class="img-fluid" width="500px" height="300px">
+    <img src="https://miro.medium.com/max/875/1*ZkwLV5-ytG1Yaodbrn7ycg.png" class="img-fluid" width="500px" height="300px">
+    <p>Now we need to calculate new sample weights with the amount of say using below formula   </p>
+    <img src="https://miro.medium.com/max/875/1*ohe3bbbCIPGLFM3VIRvGQQ.png" class="img-fluid" width="500px" height="300px">
+    <img src="https://miro.medium.com/max/875/1*_1hu4ejXdinHQe1i8pUKVw.png" class="img-fluid" width="500px" height="300px">
+    <p>Below one shows after creating new sample weights and normalized them</p>
+    <img src="https://miro.medium.com/max/875/1*epLJyDCyOnh6-ZUtPQSzSg.png" class="img-fluid" width="500px" height="300px">
+    <p>Now time to create new data set and fill columns.
+      for adding columns to the data set we use the random number 1 - 1 for this one </p>
+    <img src="https://miro.medium.com/max/859/1*rrAPlDGIa4ZOwu_u-rn3rw.png" class="img-fluid" width="500px" height="300px">
+    <img src="https://miro.medium.com/max/829/1*pzPp6yyxhqLKLGHu9F5KnQ.png" class="img-fluid" width="500px" height="300px">
+    <p>Lastly, we give all the samples equals sample Weights,
+      just like before. So that how the errors that the first tree makes influence how the second tree made </p>
+    <img src="https://miro.medium.com/max/2512/1*3m58rXsO4q-pigZXcuc-tg.png" class="img-fluid" width="500px" height="300px">
+    <p>Now we need to talk about how forest stumps created by Adaboost
+      makes classifications. Imagine that some stumps classified a patient as
+      Has Heart Diseases and some stumps classified patient has not heart diseases.
+      we calculate the total amount of say for each group and find a large sum </p>
+  </div>
+
+
+  <!--Gradient Boost-->
+  <div>
+    <h5>Gradient Boost</h5>
+    <p>Gradient Boost is very similar to Adagboost. However, gradient boost's
+      trees are typically larger than AdaBoost stumps, and leaves are ranging from 8 - 32</p>
+      <img src="https://images.akira.ai/glossary/akira-ai-gradient-boosting-ml-technique.png" class="img-fluid" width="500px" height="300px"><br>
+      <br>
+      <b>Gradient Boost With Regression</b>
+      <p>Suppose we need to predict the price of the house according to
+        the age of the house, Square and distance for the location of the house</p>
+      <img src="https://github.com/corymaklin/gradient_boosting/raw/8e7c628c4a94a0fcebc99780d987cbe5aeb33f78/images/1.png" class="img-fluid" width="500px" height="300px">
+      <p>https://github.com/corymaklin/gradient_boosting/blob/master/gradientboosting.ipynb</p>
+  </div>
+
+
+  <!--XG Boost-->
+  <div>
+    <h5>XG Boost</h5>
+
+  </div>
+
   <!--What Are the Basic Assumption?-->
   <div>
     <h5>What Are the Basic Assumption?</h5>
@@ -59,36 +139,32 @@
   </div>
 
 
-  <!--
 
-2. Advantages
-Advantages of Adaboost
 
-Doesn't Overfit
-
-It has few parameters to tune
-
-Advantages of Gradient Boost And Xgboost
-
-It has a great performance
-It can solve complex non linear functions
-It is better in solve any kind of ML usecases.
-3. Disadvantages
-Disadvantages of Gradient Boosting And Xgboost
-
-1.It requires some amount of parameter tuning
-  -->
-
-  <!--Advantages-->
+  <!--Advantages and Disadvantages-->
   <div>
-    <h5>Advantages</h5>
+    <h5>Advantages and Disadvantages</h5>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Advantages</th>
+          <th scope="col">Disadvantages</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>AdaBoost does not overfit data</td>
+          <td>XGBoost and Gradient Boost need some amount of parameters for tuning </td>
+        </tr>
+        <tr>
+          <td>AdaBoost has few parameters for tuning </td>
+        </tr>
+
+      </tbody>
+    </table>
 
   </div>
 
 
-  <!--Disadvantages-->
-  <div>
-    <h5>Disadvantages</h5>
-  </div>
 
 </div>
