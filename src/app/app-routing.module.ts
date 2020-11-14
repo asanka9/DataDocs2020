@@ -24,6 +24,10 @@ import {TransferLearningComponent}  from './data-science/deep-learning/cnn/trans
 import {SvmComponent} from './data-science/machine-learning/svm/svm.component';
 import {LogisticRegressionComponent} from './data-science/machine-learning/logistic-regression/logistic-regression.component';
 import {BoostingxagComponent} from './data-science/machine-learning/boostingxag/boostingxag.component';
+import {HClusterComponent} from './data-science/machine-learning/h-cluster/h-cluster.component';
+import {KmClusterComponent} from './data-science/machine-learning/km-cluster/km-cluster.component';
+import {DbscanClusterComponent} from './data-science/machine-learning/dbscan-cluster/dbscan-cluster.component';
+
 
 const routes: Routes = [
   {path: '', component: HomeComponent },
@@ -49,7 +53,10 @@ const routes: Routes = [
   {path:'Transfer Learning with CNN',component:TransferLearningComponent},
   {path:'Support Vector Machine ( SVM )',component:SvmComponent},
   {path:'Logistic RRegression',component:LogisticRegressionComponent},
-  {path:'Boosting Techniques',component:BoostingxagComponent}
+  {path:'Boosting Techniques',component:BoostingxagComponent},
+  {path:'DBSCAN Clustering',component:DbscanClusterComponent},
+  {path:'K-Means Clustring',component:KmClusterComponent},
+  {path:'Hierachical Clustering',component:HClusterComponent}
 
 ];
 

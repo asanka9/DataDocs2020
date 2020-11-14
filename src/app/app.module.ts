@@ -33,6 +33,9 @@ import { SvmComponent } from './data-science/machine-learning/svm/svm.component'
 import { ClassificationInfoComponent } from './data-science/machine-learning/classification-info/classification-info.component';
 import { LogisticRegressionComponent } from './data-science/machine-learning/logistic-regression/logistic-regression.component';
 import { BoostingxagComponent } from './data-science/machine-learning/boostingxag/boostingxag.component';
+import { HClusterComponent } from './data-science/machine-learning/h-cluster/h-cluster.component';
+import { KmClusterComponent } from './data-science/machine-learning/km-cluster/km-cluster.component';
+import { DbscanClusterComponent } from './data-science/machine-learning/dbscan-cluster/dbscan-cluster.component';
 
 
 
@@ -63,6 +66,9 @@ import { BoostingxagComponent } from './data-science/machine-learning/boostingxa
     ClassificationInfoComponent,
     LogisticRegressionComponent,
     BoostingxagComponent,
+    HClusterComponent,
+    KmClusterComponent,
+    DbscanClusterComponent,
 
   ],
   imports: [
