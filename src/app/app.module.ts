@@ -36,6 +36,7 @@ import { BoostingxagComponent } from './data-science/machine-learning/boostingxa
 import { HClusterComponent } from './data-science/machine-learning/h-cluster/h-cluster.component';
 import { KmClusterComponent } from './data-science/machine-learning/km-cluster/km-cluster.component';
 import { DbscanClusterComponent } from './data-science/machine-learning/dbscan-cluster/dbscan-cluster.component';
+import { NavieBayesComponent } from './data-science/machine-learning/navie-bayes/navie-bayes.component';
 
 
 
@@ -69,6 +70,7 @@ import { DbscanClusterComponent } from './data-science/machine-learning/dbscan-c
     HClusterComponent,
     KmClusterComponent,
     DbscanClusterComponent,
+    NavieBayesComponent,
 
   ],
   imports: [

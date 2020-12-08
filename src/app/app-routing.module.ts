@@ -27,6 +27,7 @@ import {BoostingxagComponent} from './data-science/machine-learning/boostingxag/
 import {HClusterComponent} from './data-science/machine-learning/h-cluster/h-cluster.component';
 import {KmClusterComponent} from './data-science/machine-learning/km-cluster/km-cluster.component';
 import {DbscanClusterComponent} from './data-science/machine-learning/dbscan-cluster/dbscan-cluster.component';
+import {NavieBayesComponent} from './data-science/machine-learning/navie-bayes/navie-bayes.component';
 
 
 const routes: Routes = [
@@ -56,7 +57,8 @@ const routes: Routes = [
   {path:'Boosting Techniques',component:BoostingxagComponent},
   {path:'DBSCAN Clustering',component:DbscanClusterComponent},
   {path:'K-Means Clustring',component:KmClusterComponent},
-  {path:'Hierachical Clustering',component:HClusterComponent}
+  {path:'Hierachical Clustering',component:HClusterComponent},
+  {path:'Navie Bayes',component:NavieBayesComponent}
 
 ];
 
