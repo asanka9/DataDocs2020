@@ -28,6 +28,8 @@ import {HClusterComponent} from './data-science/machine-learning/h-cluster/h-clu
 import {KmClusterComponent} from './data-science/machine-learning/km-cluster/km-cluster.component';
 import {DbscanClusterComponent} from './data-science/machine-learning/dbscan-cluster/dbscan-cluster.component';
 import {NavieBayesComponent} from './data-science/machine-learning/navie-bayes/navie-bayes.component';
+import {Static2Component} from './data-science/statics/static2/static2.component';
+import {DataVisualizationComponent} from './data-science/statics/data-visualization/data-visualization.component';
 
 
 const routes: Routes = [
@@ -58,7 +60,9 @@ const routes: Routes = [
   {path:'DBSCAN Clustering',component:DbscanClusterComponent},
   {path:'K-Means Clustring',component:KmClusterComponent},
   {path:'Hierachical Clustering',component:HClusterComponent},
-  {path:'Navie Bayes',component:NavieBayesComponent}
+  {path:'Navie Bayes',component:NavieBayesComponent},
+  {path:'static-2',component:Static2Component},
+  {path:'Charts',component:DataVisualizationComponent}
 
 ];
 

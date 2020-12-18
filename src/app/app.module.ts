@@ -37,6 +37,8 @@ import { HClusterComponent } from './data-science/machine-learning/h-cluster/h-c
 import { KmClusterComponent } from './data-science/machine-learning/km-cluster/km-cluster.component';
 import { DbscanClusterComponent } from './data-science/machine-learning/dbscan-cluster/dbscan-cluster.component';
 import { NavieBayesComponent } from './data-science/machine-learning/navie-bayes/navie-bayes.component';
+import { Static2Component } from './data-science/statics/static2/static2.component';
+import { DataVisualizationComponent } from './data-science/statics/data-visualization/data-visualization.component';
 
 
 
@@ -71,6 +73,8 @@ import { NavieBayesComponent } from './data-science/machine-learning/navie-bayes
     KmClusterComponent,
     DbscanClusterComponent,
     NavieBayesComponent,
+    Static2Component,
+    DataVisualizationComponent,
 
   ],
   imports: [
