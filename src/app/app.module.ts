@@ -39,6 +39,10 @@ import { DbscanClusterComponent } from './data-science/machine-learning/dbscan-c
 import { NavieBayesComponent } from './data-science/machine-learning/navie-bayes/navie-bayes.component';
 import { Static2Component } from './data-science/statics/static2/static2.component';
 import { DataVisualizationComponent } from './data-science/statics/data-visualization/data-visualization.component';
+import { SptechniquesComponent } from './data-science/machine-learning/sptechniques/sptechniques.component';
+import { HypothstestComponent } from './data-science/statics/hypothstest/hypothstest.component';
+import { ProbabilityComponent } from './data-science/statics/probability/probability.component';
+import { ChatbotsComponent } from './data-science/chatbots/chatbots.component';
 
 
 
@@ -75,6 +79,10 @@ import { DataVisualizationComponent } from './data-science/statics/data-visualiz
     NavieBayesComponent,
     Static2Component,
     DataVisualizationComponent,
+    SptechniquesComponent,
+    HypothstestComponent,
+    ProbabilityComponent,
+    ChatbotsComponent,
 
   ],
   imports: [

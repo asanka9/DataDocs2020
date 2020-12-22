@@ -30,6 +30,9 @@ import {DbscanClusterComponent} from './data-science/machine-learning/dbscan-clu
 import {NavieBayesComponent} from './data-science/machine-learning/navie-bayes/navie-bayes.component';
 import {Static2Component} from './data-science/statics/static2/static2.component';
 import {DataVisualizationComponent} from './data-science/statics/data-visualization/data-visualization.component';
+import {SptechniquesComponent} from './data-science/machine-learning/sptechniques/sptechniques.component';
+import {HypothstestComponent} from './data-science/statics/hypothstest/hypothstest.component';
+import {ProbabilityComponent}  from'./data-science/statics/probability/probability.component';
 
 
 const routes: Routes = [
@@ -62,7 +65,10 @@ const routes: Routes = [
   {path:'Hierachical Clustering',component:HClusterComponent},
   {path:'Navie Bayes',component:NavieBayesComponent},
   {path:'static-2',component:Static2Component},
-  {path:'Charts',component:DataVisualizationComponent}
+  {path:'Charts',component:DataVisualizationComponent},
+  {path:'Special Techniques',component:SptechniquesComponent},
+  {path:'Hypothethies Testing',component:HypothstestComponent},
+  {path:'probability',component:ProbabilityComponent}
 
 ];
 
